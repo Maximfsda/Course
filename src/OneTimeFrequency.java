@@ -10,7 +10,7 @@ public class OneTimeFrequency implements Frequency {
 
 
     @Override
-    public LocalDateTime getNextTime() {
+    public LocalDateTime getNextTime(int day) {
         return null;
     }
 

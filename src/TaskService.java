@@ -35,7 +35,7 @@ public class TaskService {
                 "- ежемесячная\n" +
                 "- ежегодная\n");
         String repeatabilityTask = scanner.next();
-        if(repeatabilityTask.isBlank()){
+        if(repeatabilityTask.isBlank() && repeatabilityTask == null){
             throw new TaskException("Нельзя оставлять поле пустым!");
         }
         Frequency frequency = null;
@@ -75,7 +75,8 @@ public class TaskService {
     }
     public void gettingNextDateTime(Scanner scanner){
         int id = scanner.nextInt();
-        System.out.print("Cледующей даты и времени выполнения."+ getTaskList().get(id).getFrequency().getNextTime() + "\n");
+        int day = scanner.nextInt();
+        System.out.print("Cледующей даты и времени выполнения."+ getTaskList().get(id).getFrequency().getNextTime(day) + "\n");
     }
 
 

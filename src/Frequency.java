@@ -1,7 +1,7 @@
 import java.time.LocalDateTime;
 
 public interface Frequency {
-    LocalDateTime getNextTime();
+    LocalDateTime getNextTime(int day);
 
 
 }

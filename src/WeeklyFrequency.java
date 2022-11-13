@@ -8,8 +8,8 @@ public class WeeklyFrequency implements Frequency{
         this.startTime = startTime;
     }
     @Override
-    public LocalDateTime getNextTime() {
-        return startTime.plusDays(7);
+    public LocalDateTime getNextTime(int day) {
+        return startTime.plusDays(day);
     }
 
     @Override

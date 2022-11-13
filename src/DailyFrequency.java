@@ -11,8 +11,9 @@ public class DailyFrequency implements Frequency {
     }
 
     @Override
-    public LocalDateTime getNextTime() {
-        return  startTime.plusDays(1);
+    public LocalDateTime getNextTime(int day) {
+
+        return  startTime.plusDays(day);
     }
 
     @Override
