@@ -9,8 +9,9 @@ public class MonthlyFrequency implements Frequency {
     }
 
     @Override
-    public LocalDateTime getNextTime(int day) {
-        return startTime.plusDays(day);
+    public LocalDateTime getNextTime(int months) {
+
+        return startTime.plusMonths(months);
     }
 
     @Override

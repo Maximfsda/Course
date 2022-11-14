@@ -9,8 +9,8 @@ public class AnnualFrequency implements Frequency{
     }
 
     @Override
-    public LocalDateTime getNextTime(int day) {
-        return startTime.plusDays(day);
+    public LocalDateTime getNextTime(int year) {
+        return startTime.plusYears(year);
     }
 
     @Override
